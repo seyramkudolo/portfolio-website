@@ -51,3 +51,39 @@ a:focus {
 a:active {
   color: #b852f7;
 }
+.button{
+  display: inline-block;
+  background-color: #7E49F6;
+  color: #000000;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #54E9D1;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button:active,
+.button:focus {
+  background-color: #54E9D1;
+  color: #000000;
+  border-bottom: 2px solid #7E49F6;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: #FDD537;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000000;
+}
+.button.contact:hover {
+  background-color: #000000;
+  color: #FDD537;
+}
+.button.contact:active {
+  background-color: #000000;
+  color: #ffffff;
+}
