@@ -36,3 +36,18 @@ h4 {
 img {
   width: 100%
 }
+a {
+  color: #7E49F6;
+  text-decoration: none;
+}
+a:visited {
+  color: #b852f7;
+}
+a:hover,
+a:focus {
+  color: #54E9D1;
+  text-decoration: underline;
+}
+a:active {
+  color: #b852f7;
+}
