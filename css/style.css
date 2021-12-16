@@ -132,12 +132,12 @@ svg {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #ffffff;
   text-align: center;
   padding: 10px 0;
   box-shadow: 3px 3px 2px 0px rgba(5, 255, 239, 0.75);
-  position: fixed;
-  width: 100%
 }
 
 nav {
@@ -196,8 +196,20 @@ nav>ul>li>a:active {
   background-color: #ffffff;
   color: #2e2e2e;
   padding: 0.67em;
+  text-align: center;
 }
 
 main {
   padding-top: 154px;
+}
+
+#contact {
+  background-color: #FD9EF2;
+  text-align: center;
+  color: #2e2e2e;
+  padding: 0.67em;
+}
+#copyright {
+  text-align: center;
+  font-weight: 700;
 }
