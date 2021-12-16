@@ -6,6 +6,10 @@ Pink/red: #FD5475
 Jaune: #FDD537
 Light pink: #FD9EF2
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -55,7 +59,6 @@ a:visited {
 a:hover,
 a:focus {
   color: #54E9D1;
-  text-decoration: underline;
 }
 
 a:active {
@@ -65,7 +68,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #7E49F6;
-  color: #000000;
+  color: black;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
@@ -103,6 +106,98 @@ a:active {
   background-color: #000000;
   color: #ffffff;
 }
+
 svg {
   max-width: 32px;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 3px 3px 2px 0px rgba(5, 255, 239, 0.75);
+  position: fixed;
+  width: 100%
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7E49F6
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b852f7
+}
+
+nav>ul>li>a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #7E49F6;
+  color: #54E9D1;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #54E9D1;
+  transition: 0.2s opacity;
+}
+
+nav>ul>li>a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #54E9D1;
+  color: #7E49F6;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7E49F6;
+  transition: 0.2s opacity;
+}
+
+#hero {
+  background-color: #ffffff;
+  color: #2e2e2e;
+  padding: 0.67em;
+}
+
+main {
+  padding-top: 154px;
 }
