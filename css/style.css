@@ -10,6 +10,10 @@ Light pink: #FD9EF2
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
