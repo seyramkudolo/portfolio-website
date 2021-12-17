@@ -13,7 +13,7 @@ Light pink: #FD9EF2
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #2e2e2e
@@ -68,12 +68,17 @@ a:active {
 .button {
   display: inline-block;
   background-color: #7E49F6;
-  color: black;
+  color: white;
   font-weight: 700;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #54E9D1;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .button:hover {
@@ -121,14 +126,33 @@ svg {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
 #hero h1 {
   text-align: center;
   margin: 0;
   padding: 0.67em 0;
 }
 
+#hero span {
+  display: block;
+}
+
+#work h2 {
+  text-align: center;
+}
+
 .logo {
-  max-width: 250px;
+  max-width: 85px;
 }
 
 header {
@@ -204,12 +228,116 @@ main {
 }
 
 #contact {
-  background-color: #FD9EF2;
+  background-color: #2e2e2e;
   text-align: center;
-  color: #2e2e2e;
+  color: #ffffff;
   padding: 0.67em;
 }
+
 #copyright {
   text-align: center;
   font-weight: 700;
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
 }
