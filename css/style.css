@@ -2,9 +2,7 @@
 Colors used:
 Primary color (purple): #7E49F6;
 Secondary color (Cyan?): #54E9D1;
-Pink/red: #FD5475
 Jaune: #FDD537
-Light pink: #FD9EF2
 */
 * {
   box-sizing: border-box;
@@ -145,6 +143,7 @@ svg {
   padding: 10px;
 }
 
+
 #hero h1 {
   text-align: center;
   margin: 0;
@@ -261,7 +260,7 @@ main {
 
 #copyright {
   text-align: center;
-  font-weight: 700;
+  font-size: 12px
 }
 
 #about-picture {
