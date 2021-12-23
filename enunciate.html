@@ -1,398 +1,420 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Seyram Kudolo | UX Designer
+        </title>
+        <!--favicon-->
+        <link rel="shortcut icon" href="img/favicon.io" />
+        <!--normalize cdn-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <!--montserrat (google) font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!--css stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!--fontawesome icons-->
+        <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
+        <!--responsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>
-    Seyram Kudolo | UX Designer
-  </title>
-  <!--favicon-->
-  <link rel="shortcut icon" href="img/favicon.io" />
-  <!--normalize cdn-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <!--montserrat (google) font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <!--css stylesheet-->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!--fontawesome icons-->
-  <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
-  <!--responsiveness-->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html"><img src="img/logo@2.png" alt="Logo" class="logo" /></a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="files/seyram-kudolo-resume.pdf" target="_blank">Resume</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--begining of hero section-->
+        <main>
+            <!--beginning of main section for image-->
+            <div>
+                <!-- beginning of container for image-->
+                <div class="container">
+                    <picture>
+                        <source srcset="img/enunciate/main-image@1.png" media="(max-width:767px)" />
+                        <img src="img/enunciate/main-image@2.png" alt="Enunciate Image and Prototype" />
+                    </picture>
+                </div>
+                <!-- end of container for image-->
+                <!--end of main section for image-->
+            </div>
+            <!--begining of content section-->
+            <div class="container">
+                <!--beginning of enunciate section container-->
+                <div>
+                    <!--beginning of page navigation-->
+                    <div>
+                        <ol>
+                            <li><a href="#competitoranalysis">Competitor Analysis</a></li>
+                            <li><a href="#userinterviews">User Interviews</a></li>
+                            <li><a href="#userpersona">User Persona</a></li>
+                            <li><a href="#userjourney">User Journey Map</a></li>
+                            <li><a href="#user&jobstories">User & Job Stories</a></li>
+                            <li><a href="#problem&hypothesisstatements">Problem & Hypothesis Statements</a></li>
+                            <li><a href="#taskanalyses">Task Analyses</a></li>
+                            <li><a href="#userflows">User Flows</a></li>
+                            <li><a href="#wireframes">Sketches, Wireframes, & Prototypes</a></li>
+                            <li><a href="#usabilitytesting">Usability Testing</a></li>
+                            <li><a href="#uidesign">UI Design</a></li>
+                            <li><a href="#lessonslearned">Lessons Learned</a></li>
+                        </ol>
+                        <!--end of page navigation-->
+                    </div>
+                    <!--intro begins-->
+                    <div>
+                        <h2>Introduction 📖</h2>
+                        <p>
+                            The pandemic left many of us at home with <a href="https://people.com/lifestyle/quarantine-trends-everything-that-went-viral-during-the-pandemic/" target="_blank">time on our hands</a>. Many young people used it
+                            to pick up new skills like learning a new language. The problem with this, however, is as COVID numbers are dropping, and businesses and schools are reopening, many are losing motivation because they don't have
+                            the same copious amount of time to dedicate to study. I aimed to design an app to empower young people to learn new vocabulary by incorporating short lessons into their daily schedules.
+                        </p>
+                    </div>
+                    <!--intro end-->
+                    <!--the problem begins-->
+                    <div>
+                        <h2>The Problem 🛠</h2>
+                        <p>
+                            According to a <a href="https://blog.duolingo.com/global-language-report-2020/" target="_blank">report by Duolingo</a>, a language learning website and mobile application, 30 million people attempted to learn a
+                            new language in 2020, a number 67% higher than the preceding year. Much of the spike can be attributed to the COVID-19 pandemic which implemented lockdowns in several countries. A closer look at the statistics by
+                            age reveals 40% of new learners were <a href="https://www.pewresearch.org/fact-tank/2019/01/17/where-millennials-end-and-generation-z-begins/ft_19-01-17_generations_2019/" target="_blank"> Gen Z</a> (1997-2021).
+                            27.9% of new learners reported learning for school, 19.9% were learning for travel, and 12.7% were learning to stay connected with others during the lockdown. With globalization turning the world into a global
+                            village, speaking a shared tongue presents several opportunities. A report by
+                            <a href="https://www.theguardian.com/education/2014/nov/07/-sp-do-young-people-care-about-learning-foreign-languages-data" target="_blank">The Guardian</a> showed that while young people may initially have the
+                            drive to learn new languages, reasons like time constraints, difficulty learning grammar, lack of access to native speakers, and a lack of confidence/continued motivation were cited as the main reasons for young
+                            people putting off language learning. These are problems that require solutions.
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/summary-stats@1.png" media="(max-width:767px)" />
+                            <img src="img/enunciate/summary-stats@2.png" alt="Problem Space Stats" />
+                        </picture>
+                    </div>
+                    <!--the problem ends-->
+                    <!--overview begins-->
+                    <div>
+                        <h2>Overview ⚙️</h2>
+                        <picture>
+                            <source srcset="img/enunciate/overview@1.png" media="(max-width:767px)" />
+                            <img src="img/enunciate/overview@2.png" alt="Role Overview" />
+                        </picture>
+                    </div>
+                    <!--overview end-->
+                    <!--competitor analysis begins-->
+                    <div id="competitoranalysis">
+                        <h2>Competitor Analysis 🔎</h2>
+                        <p>
+                            Before figuring out who my target audience was and how to design solutions for them, I took a look at some of the existing solutions, i.e.
+                            <a href="https://www.rosettastone.com" target="_blank"> Rosetta Stone</a>, <a href="https://www.babbel.com" target="_blank"> Babbel+</a>, and<a href="https://www.busuu.com" target="_blank"> Busuu</a>, three
+                            language learning mobile applications, and performed an informal competitor analysis.
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/competitor-analysis@1.png" media="(max-width:767px)" />
+                            <img src="img/enunciate/competitor-analysis@2.png" alt="Competitor Analysis" />
+                        </picture>
+                    </div>
+                    <!--competitor analysis ends-->
+                    <!--user interviews begins-->
+                    <div id="userinterviews">
+                        <h2>User Interviews 🔎</h2>
+                        <p>
+                            After gaining some insight into existing solutions, I conducted 5 semi-structured user interviews with young people, between the ages of 18 and 25, who were interested in/already learning a new language. This
+                            enabled me to gain a better understanding of the problem space through qualitative insight. Observing the emotions and thought processes of the people I was designing a solution for, allowed me to reframe the
+                            problem within the context of actual humans instead of drafting fictional problems. I focused on engaging with my target audience early which allowed me to test my assumptions about them and subsequently draft my
+                            hypothesis and problem statements.<br />
+                            <strong>Interview Insights:</strong> <br />
+                            Three clear patterns emerged within the participants' responses:
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/interview@1.jpeg" media="(max-width:767px)" />
+                            <img src="img/enunciate/interview@2.jpeg" alt="Interview Insights" />
+                        </picture>
+                    </div>
+                    <!--user interviews end-->
+                    <!--user persona begins-->
+                    <div id="userpersona">
+                        <h2>User Persona 🔎</h2>
+                        <p>
+                            Once I had a good understanding of the responses I created Alma, a persona based on qualitative data from the interviews. Creating and implementing a design solution with a tangible persona in mind added a
+                            necessary human element to the design process by ensuring her needs and experiences were put first. It also presented something to constantly refer to and refine during the evaluative process as my target
+                            audience interacted with Enunciate, allowing me to keep her user experience in mind.
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/persona@1.png" media="(max-width:767px)" />
+                            <img src="img/enunciate/persona@2.png" alt="User Persona" />
+                        </picture>
+                    </div>
+                    <!--user persona ends-->
+                    <!--user persona begins-->
+                    <div id="userjourney">
+                        <h2>User Journey 🔎</h2>
+                        <p>
+                            <br />
+                            <strong>Visualizing Alma's Experience</strong> Once I had established Alma's persona, I created an experience map to visualize what her process to accomplish her goal of becoming a more fluent Mandarin speaker
+                            looked like.
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/user-journey@1.png" media="(max-width:767px)" />
+                            <img src="img/enunciate/user-journey@2.png" alt="User Journey Map" />
+                        </picture>
+                    </div>
+                    <!--user persona ends-->
+                    <!--user & job stories beginning-->
+                    <div id="user&jobstories">
+                        <h2>User & Job Stories 🔎</h2>
+                        <p>
+                            Understanding Alma's goals, pain points, behaviours, as well as visualizing her user experience journey allowed me to focus on defining functions and solutions from her specific perspective. Based on the
+                            responses from the interviews, I wrote four user stories and job stories that focus on what Alma wants to accomplish and in possible contexts. As noted above three main concerns were relative to time constraints,
+                            access to accurate audio pronunciation, and access to native speakers.
+                        </p>
+                        <picture>
+                            <source srcset="img/enunciate/user-stories@1.jpeg" media="(max-width:767px)" />
+                            <img src="img/enunciate/user-stories@2.jpeg" alt="User Stories" />
+                        </picture>
+                        <picture>
+                            <source srcset="img/enunciate/job-stories@1.jpeg" media="(max-width:767px)" />
+                            <img src="img/enunciate/job-stories@2.jpeg" alt="Job Stories" />
+                        </picture>
+                        <!--user & job stories ends-->
+                        <!--problem & hypothesis statements begin-->
+                        <div id="problem&hypothesisstatements">
+                            <h2>Problem & Hypothesis Statements 🔎</h2>
+                            <p>
+                                With this information, I had a good understanding of the problem at hand, so I drafted a set of problem and hypothesis statements to keep the project focused on a specific problem I was designing a solution
+                                for. <br />
+                                <strong>Problem Statement</strong> <br />
+                                Alma needs a way to learn how to speak Mandarin, that doesn't require too much time commitment, because she wants to be able to communicate and engage with the native speakers around her. We will know this to
+                                be true when Alma continuously uses the app to learn new vocabulary/phrases over time. <br />
+                                <strong>Hypothesis Statement</strong> <br />
+                                I believe that by including the following features: short study sessions, audio learning, visual aids (e.g. vocabulary lists), and community tools to engage and connect with native speakers and other
+                                learners, I will achieve the goal of enabling Alma to attain her goal of speaking like a native.
+                            </p>
+                        </div>
+                        <!--problem and hypothesis statements end-->
+                        <!--task-analyses begin-->
+                        <div id="taskanalyses">
+                            <h2>Task Analyses 🔎</h2>
+                            <p>
+                                After pinpointing a primary problem, and drafting a hypothesis, it was time to focus on designing a solution. I honed in on two crucial tasks Alma would have to complete to achieve her goal of becoming more
+                                fluent in Mandarin; creating or signing into an account to track her progress (and seamlessly switch between devices), and a way to learn or review new vocabulary.The task analyses below outline the common
+                                steps required to perform and complete each task.
+                                <br />
+                                <strong>Task 1: Sign up/Login</strong> <br />
+                                <strong>Task 2: Learn/Review Vocabulary</strong>
+                            </p>
+                            <picture>
+                                <source srcset="img/enunciate/task-analysis/sign-up@1.png" media="(max-width:767px)" />
+                                <img src="img/enunciate/task-analysis/sign-up@2.png" alt="Sign-up/Login Task Analysis" />
+                            </picture>
+                            <picture>
+                                <source srcset="img/enunciate/task-analysis/review@1.png" media="(max-width:767px)" />
+                                <img src="img/enunciate/task-analysis/review@2.png" alt="Review/Learn Task Analysis" />
+                            </picture>
+                        </div>
+                        <!--task-analyses end-->
+                        <!--task-analyses begin-->
+                        <div id="userflows">
+                            <h2>User Flows 🔎</h2>
+                            <p>
+                                Based on the task analyses above, I could set out the path Alma would follow as she navigated through the app's interface to achieve her goals. Whereas the task analyses focus specifically on the task, user
+                                flows emphasize the type of user performing the task, which in this case is Alma.
+                            </p>
+                            <picture>
+                                <source srcset="img/enunciate/user-flow/sign-up@1.png" media="(max-width:767px)" />
+                                <img src="img/enunciate/user-flow/sign-up@2.png" alt="Sign-up/Login User Flow" />
+                            </picture>
+                            <picture>
+                                <source srcset="img/enunciate/user-flow/review@1.png" media="(max-width:767px)" />
+                                <img src="img/enunciate/user-flow/review@2.png" alt="Review/Learn User Flow" />
+                            </picture>
+                        </div>
+                        <!--task-analyses end-->
+                        <!--wireframes begin-->
+                        <div id="wireframes">
+                            <h2>Sketches, Wireframes, & Prototypes 🔎</h2>
+                            <p>
+                                From there, I was able to iterate low-fidelity wireframes to begin the evaluation process of assessing whether I had not only helped Alma achieve her goal but also created an enjoyable experience for her. I
+                                started the design process off with pen and paper sketches which allowed me to iterate through many design options quickly. I then turned those sketches into a prototype which I could then test. <br />
+                                <strong>(Tap/click the screen to engage with the prototype)</strong> or <a href="https://marvelapp.com/prototype/a029j33?emb=1&iosapp=false&frameless=false" target="_blank">click here</a> to view it in your
+                                browser.
+                            </p>
+                            <iframe src="https://marvelapp.com/prototype/a029j33?emb=1&iosapp=false&frameless=false" width="201" height="401" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+                        </div>
+                        <!--wireframes end-->
+                        <!--usability testing begins-->
+                        <div id="usabilitytesting">
+                            <h2>Usability Testing🔎</h2>
+                            <ul>
+                                <li><a href="#tasks">Direct & Scenario tasks</a></li>
+                                <li><a href="#UTI">Usability Test Insights</a></li>
+                                <li><a href="#prototype">Prototype Updates</a></li>
+                            </ul>
+                            <p>
+                                As the prototype was in its early stage, I remotely conducted moderated usability testing to reveal possible usability problems Alma might encounter as she used the app, as well as how she naturally
+                                interacted with the product. I used
+                                <a href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/">Jakob Nielsen's Error Severity Rating Scale</a> as a guide to distinguish between the error severity levels.
+                                Moderated testing was the best option as the prototype was in the early stages and missing certain functionalities, so the users required guidance to complete the desired tasks. <br />
+                                <br />
+                                <strong>Nuts & Bolts</strong> <br />
+                                <strong>Scope:</strong> <br />
+                                I set out to test the usefulness (usability + utility) of the following features: navigation, learning (Lesson of the Day), onboarding, sign up/login, and community as I believed these to be key to the app's
+                                utility and would effectively address Alma's concerns. <br />
+                                <strong>Schedule:</strong> <br />
+                                Due to the pandemic, I met independently with three participants within my target audience via video call software. Each moderated session lasted 10-15 minutes on average.<br />
+                                <strong>Equipment:</strong> <br />
+                                I decided to test on solely iOS devices due to time constraints and the convenience of participants. <br />
+                                <strong>Metrics:</strong> Jakob Nielson's Error Severity Rating Scale.
+                            </p>
+                            <div id="tasks">
+                                <h3>10 a. Direct & Scenario Tasks</h3>
+                                <p>
+                                    With both primary tasks in mind, I set up 6 direct tasks, and 6 scenario tasks to evaluate the prototype's usability.
+                                </p>
+                                <picture>
+                                    <source srcset="img/enunciate/tasks/first-tasks@1.jpeg" media="(max-width:767px)" />
+                                    <img src="img/enunciate/tasks/first-tasks@2.jpeg" alt="Direct & Scenario Tasks" />
+                                </picture>
+                                <picture>
+                                    <source srcset="img/enunciate/tasks/second-tasks@1.png" media="(max-width:767px)" />
+                                    <img src="img/enunciate/tasks/second-tasks@2.png" alt="Direct & Scenario Tasks" />
+                                </picture>
+                            </div>
+                            <div id="UTI">
+                                <h3>10 b. Usability Test Insights</h3>
+                                <p>
+                                    One thing I noticed during the testing was that the onboarding process was necessary to help with navigation retention rates. While this did improve the app's usability, there were still other identified
+                                    errors. The results of the tests were summarized into 5 points according to their place on the Error Severity Rating Scale as well as with recommendations for improvements.<br />
+                                </p>
+                                <ul>
+                                    <li>0 = I don't agree that this is a usability problem at all</li>
+                                    <li>1 = Cosmetic problem only: need not be fixed unless extra time is available on the project</li>
+                                    <li>2 = Minor usability problem: fixing this should be given low priority</li>
+                                    <li>3 = Major usability problem: important to fix, so should be given high priority</li>
+                                    <li>4 = Usability catastrophe: imperative to fix this before the product can be released</li>
+                                </ul>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-      <picture>
-        <a href="index.html">
-          <source srcset="img/logo@1.png" media="(max-width:767px)" class="logo" />
-        </a>
-        <a href="index.html"><img src="img/logo@2.png" alt="Logo" class="logo" /></a>
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="files/seyram-kudolo-resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-    </div>
-  </header>
-  <!--begining of hero section-->
-  <main>
-    <!--beginning of main section for image-->
-    <div>
-      <!-- beginning of container for image-->
-      <div class="container">
-        <picture>
-          <source srcset="img/enunciate/main-image@1.png" media="(max-width:767px)">
-          <img src="img/enunciate/main-image@2.png" alt="Enunciate Image and Prototype">
-        </picture>
-      </div> <!-- end of container for image-->
-      <!--end of main section for image-->
-    </div>
-    <!--begining of enunciate content section-->
-    <div class="container">
-      <!--beginning of enunciate section container-->
-      <div>
-        <!--beginning of page navigation-->
-        <div>
-          <ol>
-            <a href="#competitor analysis">
-              <li>Competitor Analysis</li>
-            </a>
-            <a href="#user interviews">
-              <li>User Interviews</li>
-            </a>
-            <a href="#user persona">
-              <li>User Persona</li>
-            </a>
-            <a href="#user journey">
-              <li>User Journey Map</li>
-            </a>
-            <a href="#user & job stories">
-              <li>User & Job Stories</li>
-            </a>
-            <a href="#problem & hypothesis statements">
-              <li>Problem & Hypothesis Statements</li>
-            </a>
-            <a href="#task analyses">
-              <li>Task Analyses</li>
-            </a>
-            <a href="#user flows">
-              <li>User Flows</li>
-            </a>
-            <a href="#wireframes">
-              <li>Sketches, Wireframes, & Prototypes</li>
-            </a>
-            <a href="#usability testing">
-              <li>Usability Testing</li>
-            </a>
-            <a href="#ui design">
-              <li>UI Design</li>
-            </a>
-            <a href="#lessons learned">
-              <li>Lessons Learned</li>
-            </a>
-          </ol>
-          <!--end of page navigation-->
-        </div>
-        <!--intro begins-->
-        <div>
-          <h2>Introduction 📖</h2>
-          <p>The pandemic left many of us at home with <a href="https://people.com/lifestyle/quarantine-trends-everything-that-went-viral-during-the-pandemic/" target="_blank">time on our hands</a>. Many young people used it to pick up new skills
-            like learning a new language. The problem with this, however, is as COVID numbers are dropping, and businesses and schools are
-            reopening, many are losing motivation because they don't have the same copious amount of time to dedicate to study.
-            I aimed to design an app to empower young people to learn new vocabulary by incorporating short lessons into their daily schedules.</p>
-        </div>
-        <!--intro end-->
-        <!--the problem begins-->
-        <div>
-          <h2>The Problem 🛠</h2>
-          <p>According to a <a href="https://blog.duolingo.com/global-language-report-2020/" target="_blank">report by Duolingo</a>, a language learning website and mobile application, 30 million people attempted to learn a new language in 2020, a
-            number 67% higher than the preceding year. Much of the spike can be attributed to the COVID-19 pandemic which implemented lockdowns in several countries.
-            A closer look at the statistics by age reveals 40% of new learners were <a href="https://www.pewresearch.org/fact-tank/2019/01/17/where-millennials-end-and-generation-z-begins/ft_19-01-17_generations_2019/" target="_blank"> Gen Z</a>
-            (1997-2021). 27.9% of new learners reported learning for school, 19.9% were learning for travel, and 12.7% were learning to stay connected with others during the lockdown. With globalization turning the world into a global village,
-            speaking a shared tongue presents several opportunities.
-            A report by <a href="https://www.theguardian.com/education/2014/nov/07/-sp-do-young-people-care-about-learning-foreign-languages-data" target="_blank">The Guardian</a> showed that while young people may initially have the drive to learn
-            new languages, reasons like time constraints, difficulty learning grammar, lack of access to native speakers, and a lack of confidence/continued motivation were cited as the main reasons for young people putting off language learning.
-            These are problems that require solutions.</p>
-          <picture>
-            <source srcset="img/enunciate/summary-stats@1.png" media="(max-width:767px)">
-            <img src="img/enunciate/summary-stats@2.png" alt="Problem Space Stats">
-          </picture>
-        </div>
-        <!--the problem ends-->
-        <!--overview begins-->
-        <div>
-          <h2>Overview ⚙️</h2>
-          <picture>
-            <source srcset="img/enunciate/overview@1.png" media="(max-width:767px)">
-            <img src="img/enunciate/overview@2.png" alt="Role Overview">
-          </picture>
-        </div>
-        <!--overview end-->
-        <!--competitor analysis begins-->
-        <div id="competitor analysis">
-          <h2>Competitor Analysis 🔎</h2>
-          <p>Before figuring out who my target audience was and how to design solutions for them, I took a look at some of the existing solutions, i.e. <a href="https://www.rosettastone.com" target="_blank"> Rosetta Stone</a>, <a
-              href="https://www.babbel.com" target="_blank"> Babbel+</a>, and<a href="https://www.busuu.com" target="_blank"> Busuu</a>, three language learning mobile applications, and performed an informal competitor analysis.</p>
-          <picture>
-            <source srcset="img/enunciate/competitor-analysis@1.png" media="(max-width:767px)">
-            <img src="img/enunciate/competitor-analysis@2.png" alt="Competitor Analysis">
-          </picture>
-        </div>
-        <!--competitor analysis ends-->
-        <!--user interviews begins-->
-        <div id="user interviews">
-          <h2>User Interviews 🔎</h2>
-          <p>After gaining some insight into existing solutions, I conducted 5 semi-structured user interviews with young people, between the ages of 18 and 25, who were interested in/already learning a new language. This enabled me to gain a better
-            understanding of the problem space through qualitative insight. Observing the emotions and thought processes of the people I was designing a solution for, allowed me to reframe the problem within the context of actual humans instead of
-            drafting fictional problems. I focused on engaging with my target audience early which allowed me to test my assumptions about them and subsequently draft my hypothesis and problem statements.<br> <strong>Interview Insights:</strong> <br>
-            Three clear patterns emerged within the participants' responses:</p>
-          <picture>
-            <source srcset="img/enunciate/interview@1.jpeg" media="(max-width:767px)">
-            <img src="img/enunciate/interview@2.jpeg" alt="Interview Insights">
-          </picture>
-        </div>
-        <!--user interviews end-->
-        <!--user persona begins-->
-        <div id="user persona">
-          <h2>User Persona 🔎</h2>
-          <p>Once I had a good understanding of the responses I created Alma, a persona based on qualitative data from the interviews. Creating and implementing a design solution with a tangible persona in mind added a necessary human element to the
-            design process by ensuring her needs and experiences were put first. It also presented something to constantly refer to and refine during the evaluative process as my target audience interacted with Enunciate, allowing me to keep her user
-            experience in mind.</p>
-          <picture>
-            <source srcset="img/enunciate/persona@1.png" media="(max-width:767px)">
-            <img src="img/enunciate/persona@2.png" alt="User Persona">
-          </picture>
-        </div>
-        <!--user persona ends-->
-        <!--user persona begins-->
-        <div id="user journey">
-          <h2>User Journey 🔎</h2>
-          <p> <br> <strong>Visualizing Alma's Experience</strong>
-            Once I had established Alma's persona, I created an experience map to visualize what her process to accomplish her goal of becoming a more fluent Mandarin speaker looked like.</p>
-          <picture>
-            <source srcset="img/enunciate/user-journey@1.png" media="(max-width:767px)">
-            <img src="img/enunciate/user-journey@2.png" alt="User Journey Map">
-          </picture>
-        </div>
-        <!--user persona ends-->
-        <!--user & job stories beginning-->
-        <div id="user & job stories">
-          <h2>User & Job Stories 🔎</h2>
-          <p>
-            Understanding Alma's goals, pain points, behaviours, as well as visualizing her user experience journey allowed me to focus on defining functions and solutions from her specific perspective. Based on the responses from the interviews, I
-            wrote four user stories and job stories that focus on what Alma wants to accomplish and in possible contexts. As noted above three main concerns were relative to time constraints, access to accurate audio pronunciation, and access to
-            native speakers.
-          </p>
-          <picture>
-            <source srcset="img/enunciate/user-stories@1.jpeg" media="(max-width:767px)">
-            <img src="img/enunciate/user-stories@2.jpeg" alt="User Stories">
-          </picture>
-          <picture>
-            <source srcset="img/enunciate/job-stories@1.jpeg" media="(max-width:767px)">
-            <img src="img/enunciate/job-stories@2.jpeg" alt="Job Stories">
-          </picture>
-          <!--user & job stories ends-->
-          <!--problem & hypothesis statements begin-->
-          <div id="problem & hypothesis statements">
-            <h2>Problem & Hypothesis Statements 🔎</h2>
-            <p>
-              With this information, I had a good understanding of the problem at hand, so I drafted a set of problem and hypothesis statements to keep the project focused on a specific problem I was designing a solution for. <br> <strong>Problem
-                Statement</strong> <br> Alma needs a way to learn how to speak Mandarin, that doesn't require too much time commitment, because she wants to be able to communicate and engage with the native speakers around her. We will know this to
-              be true when Alma continuously uses the app to learn new vocabulary/phrases over time. <br> <strong>Hypothesis Statement</strong> <br> I believe that by including the following features: short study sessions, audio learning, visual aids
-              (e.g. vocabulary lists), and community tools to engage and connect with native speakers and other learners, I will achieve the goal of enabling Alma to attain her goal of speaking like a native.
-            </p>
-          </div>
-          <!--problem and hypothesis statements end-->
-          <!--task-analyses begin-->
-          <div id="task analyses">
-            <h2>Task Analyses 🔎</h2>
-            <p>
-              After pinpointing a primary problem, and drafting a hypothesis, it was time to focus on designing a solution. I honed in on two crucial tasks Alma would have to complete to achieve her goal of becoming more fluent in Mandarin; creating
-              or signing into an account to track her progress (and seamlessly switch between devices), and a way to learn or review new vocabulary.The task analyses below outline the common steps required to perform and complete each task.
-              <br><strong>Task 1: Sign up/Login</strong> <br><strong>Task 2: Learn/Review Vocabulary</strong>
-            </p>
-            <picture>
-              <source srcset="img/enunciate/task-analysis/sign-up@1.png" media="(max-width:767px)">
-              <img src="img/enunciate/task-analysis/sign-up@2.png" alt="Sign-up/Login Task Analysis">
-            </picture>
-            <picture>
-              <source srcset="img/enunciate/task-analysis/review@1.png" media="(max-width:767px)">
-              <img src="img/enunciate/task-analysis/review@2.png" alt="Review/Learn Task Analysis">
-            </picture>
-          </div>
-          <!--task-analyses end-->
-          <!--task-analyses begin-->
-          <div id="user flows">
-            <h2>User Flows 🔎</h2>
-            <p>
-              Based on the task analyses above, I could set out the path Alma would follow as she navigated through the app's interface to achieve her goals. Whereas the task analyses focus specifically on the task, user flows emphasize the type of
-              user performing the task, which in this case is Alma.
-            </p>
-            <picture>
-              <source srcset="img/enunciate/user-flow/sign-up@1.png" media="(max-width:767px)">
-              <img src="img/enunciate/user-flow/sign-up@2.png" alt="Sign-up/Login User Flow">
-            </picture>
-            <picture>
-              <source srcset="img/enunciate/user-flow/review@1.png" media="(max-width:767px)">
-              <img src="img/enunciate/user-flow/review@2.png" alt="Review/Learn User Flow">
-            </picture>
-          </div>
-          <!--task-analyses end-->
-          <!--wireframes begin-->
-          <div id="wireframes">
-            <h2>Sketches, Wireframes, & Prototypes 🔎</h2>
-            <p>
-              From there, I was able to iterate low-fidelity wireframes to begin the evaluation process of assessing whether I had not only helped Alma achieve her goal but also created an enjoyable experience for her. I started the design process
-              off with pen and paper sketches which allowed me to iterate through many design options quickly. I then turned those sketches into a prototype which I could then test. <br><strong>(Tap/click the screen to engage with the
-                prototype)</strong> or <a href="https://marvelapp.com/prototype/a029j33?emb=1&iosapp=false&frameless=false" target="_blank">click here</a> to view it in your browser.
-            </p>
-            <iframe src="https://marvelapp.com/prototype/a029j33?emb=1&iosapp=false&frameless=false" width="201" height="401" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
-          </div>
-          <!--wireframes end-->
-          <!--usability testing begins-->
-          <div id="usability testing">
-            <h2>Usability Testing🔎</h2>
-            <ul>
-              <a href="#tasks">
-                <li>Direct & Scenario tasks</li>
-              </a>
-              <a href="#UTI">
-                <li>Usability Test Insights</li>
-              </a>
-              <a href="#prototype">
-                <li>Prototype Updates</li>
-              </a>
-            </ul>
-            <p>
-              As the prototype was in its early stage, I remotely conducted moderated usability testing to reveal possible usability problems Alma might encounter as she used the app, as well as how she naturally interacted with the product. I used
-              <a href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/">Jakob Nielsen's Error Severity Rating Scale</a> as a guide to distinguish between the error severity levels. Moderated testing was the best
-              option as the prototype was in the early stages and missing certain functionalities, so the users required guidance to complete the desired tasks. <br><br><strong>Nuts & Bolts</strong> <br><strong>Scope:</strong> <br>I set out to test
-              the usefulness (usability + utility) of the following features: navigation, learning (Lesson of the Day), onboarding, sign up/login, and community as I believed these to be key to the app's utility and would effectively address Alma's
-              concerns. <br><strong>Schedule:</strong> <br> Due to the pandemic, I met independently with three participants within my target audience via video call software. Each moderated session lasted 10-15 minutes on
-              average.<br><strong>Equipment:</strong> <br>I decided to test on solely iOS devices due to time constraints and the convenience of participants. <br><strong>Metrics:</strong> Jakob Nielson's Error Severity Rating Scale.
-            </p>
-            <div id="tasks">
-              <h3>10 a. Direct & Scenario Tasks</h3>
-              <p>
-                With both primary tasks in mind, I set up 6 direct tasks, and 6 scenario tasks to evaluate the prototype's usability.
-              </p>
-              <picture>
-                <source srcset="img/enunciate/tasks/first-tasks@1.jpeg" media="(max-width:767px)">
-                <img src="img/enunciate/tasks/first-tasks@2.jpeg" alt="Direct & Scenario Tasks">
-              </picture>
-              <picture>
-                <source srcset="img/enunciate/tasks/second-tasks@1.png" media="(max-width:767px)">
-                <img src="img/enunciate/tasks/second-tasks@2.png" alt="Direct & Scenario Tasks">
-              </picture>
+                                <picture>
+                                    <source srcset="img/enunciate/usability@1.png" media="(max-width:767px)" />
+                                    <img src="img/enunciate/usability@2.png" alt="Usability Test Insights" />
+                                </picture>
+                            </div>
+                            <div id="prototype">
+                                <h3>10 c. Prototype Updates</h3>
+                                <p>
+                                    As seen in the image above, the features that were supposed to allow Alma to review and learn vocabulary (Lesson of the Day and Audio) were not as easy to locate from the app's flat navigation as I had
+                                    thought. Additionally, it wasn't easy getting back to the home screen once Alma navigated to a different page. I had been placing too much focus on the app's features that I had forgotten to include
+                                    simple things like a home button in the app's information architecture. This meant going back to the drawing board, as any good designer would.Additionally, since accurate pronunciation was one of Alma's
+                                    main concerns, I felt adding a separate section for access to a dictionary with audio features for improving enunciation might be more useful to Alma in achieving her goals. <br />
+                                    After these changes, I conducted another round of testing, and users were able to navigate through the app much quicker and complete the tasks much faster.Ideally, I would have preferred to conduct
+                                    several rounds of testing after each reiteration, but due to time constraints, I was only able to conduct two rounds. Nevertheless, the insights from the usability testing allowed me to go back and create
+                                    more iterations and reiterations to make the app more usable and useful for the user which is most important
+                                </p>
+                                <picture>
+                                    <source srcset="img/enunciate/prototype-reiterations/vocab@1.png" media="(max-width:767px)" />
+                                    <img src="img/enunciate/prototype-reiterations/vocab@2.png" alt="Prototype Reiterations-vocabulary" />
+                                </picture>
+                                <picture>
+                                    <source srcset="img/enunciate/prototype-reiterations/pd@1.png" media="(max-width:767px)" />
+                                    <img src="img/enunciate/prototype-reiterations/pd@2.png" alt="Prototype Reiterations-pronunciation dictionary" />
+                                </picture>
+                                <picture>
+                                    <source srcset="img/enunciate/prototype-reiterations/sign-up@1.png" media="(max-width:767px)" />
+                                    <img src="img/enunciate/prototype-reiterations/sign-up@2.png" alt="Prototype Reiterations-sign up" />
+                                </picture>
+                            </div>
+                        </div>
+                        <!--usability testing ends-->
+                        <!--ui design begins-->
+                        <div id="uidesign">
+                            <h2>UI Design 🔎</h2>
+                            <p>
+                                A UX designer once said, "designs are never final, but cycles end" (<a href="https://www.funmilade.design/">Funmilade Taiwo</a>). <br />
+                                In designing the final high fidelity mockups, I wanted to create a brand identity that was reflective of the users-- youthful, creative, and curious, so I went with a fresh and light visual style. As I was
+                                designing for iOS screens, I followed Apple's iOS Human Interface Guidelines to ensure Enunciate's design was seamlessly integrated with Apple devices. Overall, I wanted the app to be intuitive, easy to
+                                navigate, easy to use, and content-focused. Based on the feedback I received from the second usability test it was, and most importantly the app's features were essential in helping Alma achieve her goals.​
+                                For your own experience with Enunciate, feel free to engage with the prototype below or
+                                <a
+                                    href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FABFDarygRXN8eP1EEDr0Yg%2FEnunciate-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D30%253A0%26starting-point-node-id%3D30%253A0%26scaling%3Dscale-down"
+                                    target="_blank"
+                                >
+                                    click here
+                                </a>
+                                to view it in your browser.
+                            </p>
+                            <iframe
+                                style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                width="800"
+                                height="450"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FABFDarygRXN8eP1EEDr0Yg%2FEnunciate-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D30%253A0%26starting-point-node-id%3D30%253A0%26scaling%3Dscale-down"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <!--ui design ends-->
+                        <!--lessons learned begins-->
+                        <div id="lessonslearned">
+                            <h2>Lessons Learned 🔎</h2>
+                            <p>
+                                Understanding the design thinking process as cyclical helped a lot because I could go back to previous stages without feeling like I was "falling behind" in the process. For instance, I could design sketches,
+                                test out the lo-fi prototype, and go back to the research stage to collect more qualitative data on my target audience which ultimately helped enrich the overall experience for myself and the user. As this is
+                                the first UX design project I have ever undertaken, I can say I'm proud of how it turned out. It's not perfect (there's always more to learn, improve and reiterate), but it was a great learning experience and
+                                a good starting point, and I'm looking forward to doing it all over again (right after a Netflix break).
+                            </p>
+                            <!--lessons learned ends-->
+                        </div>
+                        <!--end of enunciate section container-->
+                    </div>
+                    <!--end of enunciate content section-->
+                </div>
             </div>
-            <div id="UTI">
-              <h3>10 b. Usability Test Insights</h3>
-              <p>
-                One thing I noticed during the testing was that the onboarding process was necessary to help with navigation retention rates. While this did improve the app's usability, there were still other identified errors. The results of the
-                tests were summarized into 5 points according to their place on the Error Severity Rating Scale as well as with recommendations for improvements.<br>
-              <ul>
-                <li>0 = I don't agree that this is a usability problem at all</li>
-                <li>1 = Cosmetic problem only: need not be fixed unless extra time is available on the project</li>
-                <li>2 = Minor usability problem: fixing this should be given low priority</li>
-                <li>3 = Major usability problem: important to fix, so should be given high priority</li>
-                <li>4 = Usability catastrophe: imperative to fix this before the product can be released</li>
-              </ul>
-              </p>
-              <picture>
-                <source srcset="img/enunciate/usability@1.png" media="(max-width:767px)">
-                <img src="img/enunciate/usability@2.png" alt="Usability Test Insights">
-              </picture>
+        </main>
+        <footer id="contact">
+            <div class="container">
+                <h2>Like What You See?</h2>
+                <p>Get in touch with me by phone at <a href="tel:1234567890">1234567890</a>.</p>
+                <div>
+                    <p>Prefer to email?</p>
+                    <div>
+                        <a href="mailto:google@gmail.com" class="button contact">Email Me</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/seyram-kudolo/" target="_blank">
+                        <svg
+                            height="67px"
+                            id="Layer_1"
+                            style="enable-background: new 0 0 67 67;"
+                            version="1.1"
+                            viewBox="0 0 67 67"
+                            width="67px"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <path
+                                d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                                style="fill-rule: evenodd; clip-rule: evenodd; fill: #007ab9;"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <p id="copyright">COPYRIGHT SEYRAM-KUDOLO 2021</p>
             </div>
-            <div id="prototype">
-              <h3>10 c. Prototype Updates</h3>
-              <p>
-                As seen in the image above, the features that were supposed to allow Alma to review and learn vocabulary (Lesson of the Day and Audio) were not as easy to locate from the app's flat navigation as I had thought. Additionally, it wasn't
-                easy getting back to the home screen once Alma navigated to a different page. I had been placing too much focus on the app's features that I had forgotten to include simple things like a home button in the app's information
-                architecture. This meant going back to the drawing board, as any good designer would.Additionally, since accurate pronunciation was one of Alma's main concerns, I felt adding a separate section for access to a dictionary with audio
-                features for improving enunciation might be more useful to Alma in achieving her goals. <br>After these changes, I conducted another round of testing, and users were able to navigate through the app much quicker and complete the tasks
-                much faster.Ideally, I would have preferred to conduct several rounds of testing after each reiteration, but due to time constraints, I was only able to conduct two rounds. Nevertheless, the insights from the usability testing allowed
-                me to go back and create more iterations and reiterations to make the app more usable and useful for the user which is most important
-              </p>
-              <picture>
-                <source srcset="img/enunciate/prototype-reiterations/vocab@1.png" media="(max-width:767px)">
-                <img src="img/enunciate/prototype-reiterations/vocab@2.png" alt="Prototype Reiterations-vocabulary">
-              </picture>
-              <picture>
-                <source srcset="img/enunciate/prototype-reiterations/pd@1.png" media="(max-width:767px)">
-                <img src="img/enunciate/prototype-reiterations/pd@2.png" alt="Prototype Reiterations-pronunciation dictionary">
-              </picture>
-              <picture>
-                <source srcset="img/enunciate/prototype-reiterations/sign-up@1.png" media="(max-width:767px)">
-                <img src="img/enunciate/prototype-reiterations/sign-up@2.png" alt="Prototype Reiterations-sign up">
-              </picture>
-            </div>
-          </div>
-          <!--usability testing ends-->
-          <!--ui design begins-->
-          <div id="ui design">
-            <h2>UI Design 🔎</h2>
-            <p>
-              A UX designer once said, "designs are never final, but cycles end" (<a href="https://www.funmilade.design/">Funmilade Taiwo</a>). <br>In designing the final high fidelity mockups, I wanted to create a brand identity that was reflective
-              of the users-- youthful, creative, and curious, so I went with a fresh and light visual style. As I was designing for iOS screens, I followed Apple's iOS Human Interface Guidelines to ensure Enunciate's design was seamlessly integrated
-              with Apple devices. Overall, I wanted the app to be intuitive, easy to navigate, easy to use, and content-focused. Based on the feedback I received from the second usability test it was, and most importantly the app's features were
-              essential in helping Alma achieve her goals.​ For your own experience with Enunciate, feel free to engage with the prototype below or <a
-                href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FABFDarygRXN8eP1EEDr0Yg%2FEnunciate-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D30%253A0%26starting-point-node-id%3D30%253A0%26scaling%3Dscale-down"
-                target="_blank">click here</a> to view it in your browser.
-            </p>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FABFDarygRXN8eP1EEDr0Yg%2FEnunciate-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D30%253A0%26starting-point-node-id%3D30%253A0%26scaling%3Dscale-down"
-              allowfullscreen></iframe>
-          </div>
-          <!--ui design ends-->
-          <!--lessons learned begins-->
-          <div id="lessons learned">
-            <h2>Lessons Learned 🔎</h2>
-            <p>
-              Understanding the design thinking process as cyclical helped a lot because I could go back to previous stages without feeling like I was "falling behind" in the process. For instance, I could design sketches, test out the lo-fi
-              prototype, and go back to the research stage to collect more qualitative data on my target audience which ultimately helped enrich the overall experience for myself and the user. As this is the first UX design project I have ever
-              undertaken, I can say I'm proud of how it turned out. It's not perfect (there's always more to learn, improve and reiterate), but it was a great learning experience and a good starting point, and I'm looking forward to doing it all over
-              again (right after a Netflix break).
-            </p>
-            <!--lessons learned ends-->
-          </div>
-          <!--end of enunciate section container-->
-        </div>
-        <!--end of enunciate content section-->
-      </div>
-  </main>
-  <footer id="contact">
-    <div class="container">
-      <h2>Like What You See?</h2>
-      <p>Get in touch with me by phone at <a href="tel:1234567890">1234567890</a>.</p>
-      <div>
-        <p>Prefer to email?</p>
-        <div>
-          <a href="mailto:google@gmail.com" class="button contact">Email Me</a>
-        </div>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/seyram-kudolo/" target="_blank"><svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-              d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-              style="fill-rule:evenodd;clip-rule:evenodd;fill:#007AB9;" />
-          </svg></a>
-      </div>
-      <p id="copyright">COPYRIGHT SEYRAM-KUDOLO 2021</p>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
